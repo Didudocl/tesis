@@ -1,0 +1,40 @@
+.app-container {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #4B0082; /* Morado */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background-color: #111;
+}
+
+.content {
+    margin-top: 60px; /* Ajustar este valor según la altura de la navbar */
+}

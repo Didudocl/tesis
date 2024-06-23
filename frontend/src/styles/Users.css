@@ -1,0 +1,65 @@
+
+.users-container {
+    margin-top: 60px; /* Ajusta este valor según la altura de la navbar */
+    padding: 20px;
+}
+.users-container {
+    margin-top: 60px; /* Ajusta este valor según la altura de la navbar */
+    padding: 20px;
+}
+
+.users-container h1 {
+    color: #4B0082; /* Morado, acorde a la navbar */
+    text-align: center;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.users-table th, .users-table td {
+    padding: 12px 15px;
+}
+
+.users-table th {
+    background-color: #4B0082; /* Morado, acorde a la navbar */
+    color: white;
+}
+
+.users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.users-table tr:hover {
+    background-color: #ddd;
+}
+
+.rol-admin {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.rol-encargado {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    color: #4B0082;
+}

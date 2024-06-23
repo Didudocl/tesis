@@ -1,10 +1,12 @@
 
+import '../styles/Home.css';
+
 const Home = () => {
   return (
-    <>
-      <h1>Holaa</h1>
-    </>
-  )
-}
+    <div className="home-container">
+      <h1>Página principal</h1>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

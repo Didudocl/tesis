@@ -1,5 +1,3 @@
-
-
 import '../styles/Users.css';
 
 const users = [
@@ -27,6 +25,22 @@ const users = [
 ];
 
 const Users = () => {
+    const handleEdit = (user) => {
+        const confirmed = window.confirm(`¿Estás seguro de que quieres editar a ${user.nombre}?`);
+        if (confirmed) {
+            // Lógica de edición
+            console.log(`Editando a ${user.nombre}`);
+        }
+    };
+
+    const handleDelete = (user) => {
+        const confirmed = window.confirm(`¿Estás seguro de que quieres eliminar a ${user.nombre}?`);
+        if (confirmed) {
+            // Lógica de eliminación
+            console.log(`Eliminando a ${user.nombre}`);
+        }
+    };
+
     return (
         <div className="users-container">
             <h1>Usuarios Registrados</h1>
@@ -54,8 +68,8 @@ const Users = () => {
                                 </span>
                             </td>
                             <td>
-                                <button className="edit-btn">✏️</button>
-                                <button className="delete-btn">🗑️</button>
+                                <button className="edit-btn" onClick={() => handleEdit(user)}>✏️</button>
+                                <button className="delete-btn" onClick={() => handleDelete(user)}>🗑️</button>
                             </td>
                         </tr>
                     ))}
